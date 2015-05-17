@@ -70,6 +70,6 @@ shinyUI(fluidPage(
         )
     )
   ),
-helpText("Copyright 2015, under the AGPL. For more information, please email", a(href='mailto:gamsatcalc@fearthecow.net', 'gamsatcalc@fearthecow.net'), ". This tool is not affiliated in any way with ACER, GEMSAS, any university, or preparation course.")
+helpText("Copyright 2015, under the AGPL. For more information, please email", a(href='mailto:gamsatcalc@fearthecow.net', 'gamsatcalc@fearthecow.net'), ".", helpText("This tool is not affiliated in any way with ACER, GEMSAS, any university, any preparation course, or any other person or organisation.", helpText("Licensed under AGPL3 - no warranty applies - ", a(href="https://bitbucket.org/chesftc/gamsat_predictor", "source code."))))
 )
 )
