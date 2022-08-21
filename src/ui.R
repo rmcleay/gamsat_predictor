@@ -3,7 +3,7 @@
 shinyUI(fluidPage(
   titlePanel("GAMSAT Score Estimator"),
   tags$head(
-      tags$script(src="https://fearthecow.net/js/iframeresizer/iframeResizer.min.js", type="text/javascript")
+      tags$script(src="https://fearthecow.net/js/iframeresizer/iframeResizer.contentWindow.min.js", type="text/javascript")
       ),
 
   sidebarLayout(
