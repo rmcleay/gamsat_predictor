@@ -48,7 +48,7 @@ You can then access the tool at http://localhost:3838/.
 
 # Contributing
 
-This project is on Bitbucket at https://github.com/rmcleay/gamsat_predictor
+This project is on GitHub at https://github.com/rmcleay/gamsat_predictor
 
 Please feel free to send me either PRs or patches created via the patch
 utility.

@@ -2,6 +2,9 @@
 
 shinyUI(fluidPage(
   titlePanel("GAMSAT Score Estimator"),
+  tags$head(
+      tags$script(src="https://fearthecow.net/js/iframeresizer/iframeResizer.min.js", type="text/javascript")
+      ),
 
   sidebarLayout(
     sidebarPanel(
@@ -52,7 +55,7 @@ shinyUI(fluidPage(
             ), 
             tabPanel("Numeric/Regression Details",
                      p("Depending on the practice exam marks that you have available for input, a different regression model will have been used. Generally, the more data you have, the more accurate these results will be."),
-                     p("For those familar with R, the following may provide more details. Full source code (and pull requests if there's something that you'd like to fix) can be found at https://bitbucket.com/chesftc/gamsat_predictor/"),
+                     p("For those familar with R, the following may provide more details. Full source code (and pull requests if there's something that you'd like to fix) can be found at https://github.com/rmcleay/gamsat_predictor/"),
                      h4("Section 1:"),
                      p("The following linear regression model was used:"),
                      verbatimTextOutput("s1lmsummary"),
@@ -70,6 +73,7 @@ shinyUI(fluidPage(
         )
     )
   ),
-helpText("Copyright 2015, under the AGPL. For more information, please email", a(href='mailto:gamsatcalc@fearthecow.net', 'gamsatcalc@fearthecow.net'), ".", helpText("This tool is not affiliated in any way with ACER, GEMSAS, any university, any preparation course, or any other person or organisation.", helpText("Licensed under AGPL3 - no warranty applies - ", a(href="https://bitbucket.org/chesftc/gamsat_predictor", "source code."))))
+helpText("Copyright 2015, under the AGPL. For more information, please email", a(href='mailto:gamsatcalc@fearthecow.net', 'gamsatcalc@fearthecow.net'), ".", helpText("This tool is not affiliated in any way with ACER, GEMSAS, any university, any preparation course, or any other person or organisation.", helpText("Licensed under AGPL3 - no warranty applies - ", a(href="https://github.com/rmcleay/gamsat_predictor", "source code.")))),
+HTML('<div data-iframe-height></div>')
 )
 )
